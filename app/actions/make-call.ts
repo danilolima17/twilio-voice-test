@@ -23,7 +23,7 @@ export async function makeCall(formData: FormData) {
     const auth = Buffer.from(`${accountSid}:${authToken}`).toString("base64")
 
 
-    const serverTwiMLUrl = "https://98c1-2804-d49-6957-5400-f586-c9b7-4ca0-a67a.ngrok-free.app/api/twilio-webhook";
+    const serverTwiMLUrl = "https://twilio-voice-test-yb4a.vercel.app/api/twilio-webhook";
     const urlEncodedData = new URLSearchParams()
     urlEncodedData.append("To", phoneNumber)
     urlEncodedData.append("From", fromNumber)
